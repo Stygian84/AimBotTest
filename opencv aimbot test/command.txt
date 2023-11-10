@@ -1,0 +1,10 @@
+C:/Users/Nicholas/Desktop/opencv3.4.15/opencv/build/x64/vc15/bin/opencv_createsamples.exe -info C:/Users/Nicholas/Desktop/opencvtuto/pos.txt -w 24 -h 24 -num 2000 -vec pos.vec
+
+C:\Users\Nicholas\Desktop\opencv3.4.15\opencv\build\x64\vc15\bin\opencv_annotation.exe --annotations=pos.txt --images=C:\Users\Nicholas\Desktop\opencvtuto\positive\ -m=1
+
+C:/Users/Nicholas/Desktop/opencv3.4.15/opencv/build/x64/vc15/bin/opencv_traincascade.exe -data C:/Users/Nicholas/Desktop/opencvtuto/cascade/ -vec C:/Users/Nicholas/Desktop/opencvtuto/pos.vec -bg C:/Users/Nicholas/Desktop/opencvtuto/neg.txt -w 24 -h 24 -precalcValBufSize 1600 -precalcIdxBufSize 1600 -maxFalseAlarmRate 0.3 -minHitRate 0.999 -numPos 120 -numNeg 7400 -numStages 10
+678 samples
+mxaa 2x all low quality
+16 15 1122 outline off
+
+C:/Users/Nicholas/Desktop/opencv3.4.15/opencv/build/x64/vc15/bin/opencv_traincascade.exe -data C:/Users/Nicholas/Desktop/opencvtuto/cascade/ -vec C:/Users/Nicholas/Desktop/opencvtuto/pos.vec -bg C:/Users/Nicholas/Desktop/opencvtuto/neg.txt -w 24 -h 24 -precalcValBufSize 1600 -precalcIdxBufSize 1600 -maxFalseAlarmRate 0.3 -minHitRate 0.999 -numPos 678 -numNeg 10000 -numStages 5
